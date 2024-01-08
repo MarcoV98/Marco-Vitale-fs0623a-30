@@ -4,7 +4,7 @@ const SingleComment = ({ comment }) => {
   return (
     <div>
       <h3>{comment.comment}</h3>
-      <p>Rating: {comment.rate}</p>
+      <p>Ratings: {comment.rate}</p>
     </div>
   );
 };
