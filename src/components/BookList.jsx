@@ -1,9 +1,7 @@
-import React from "react";
-import SingleBook from "./SingleBook";
+import React from 'react';
+import SingleBook from './SingleBook';
 
-function BookList(props) {
-  const { books } = props;
-
+const BookList = ({ books }) => {
   return (
     <div className="d-flex flex-wrap justify-content">
       {books.map((book) => (
@@ -11,6 +9,6 @@ function BookList(props) {
       ))}
     </div>
   );
-}
+};
 
 export default BookList;
