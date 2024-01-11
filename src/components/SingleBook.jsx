@@ -17,6 +17,7 @@ const SingleBook = ({ img, title }) => {
           border: selected ? '3px solid red' : 'none',
         }}
         onClick={toggle}
+        data-testid="single-book-card" // Aggiunto il data-testid
       >
         <Card.Img src={img} alt={title} style={{ maxWidth: '50%' }} />
         <Card.Body>
@@ -30,4 +31,5 @@ const SingleBook = ({ img, title }) => {
 };
 
 export default SingleBook;
+
 
